@@ -1,0 +1,206 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v34-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v34-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v34-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v34-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-600 - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v34-latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v34-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v34-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v34-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v34-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-700 - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v34-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v34-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v34-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v34-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v34-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-800 - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/open-sans-v34-latin-800.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v34-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v34-latin-800.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v34-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v34-latin-800.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-italic - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v34-latin-italic.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v34-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v34-latin-italic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v34-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v34-latin-italic.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-800italic - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 800;
+    src: url('../fonts/open-sans-v34-latin-800italic.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-800italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v34-latin-800italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v34-latin-800italic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v34-latin-800italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v34-latin-800italic.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* Header */
+.header-wrapper{
+     padding-top: 29px;
+     background-color: #F6F2F2;
+}
+
+.header{
+     display: flex;
+     justify-content: center;
+     width: 1249px;
+     min-height: 89px;
+     margin: 0 auto;
+     background-color: rgba(0,0,0,0.8);
+}
+
+.site-menu{
+     margin-left: -30px;
+}
+
+.menu-list{
+     display:flex;
+     flex-wrap: wrap;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+.menu-list > li {
+     display:flex;
+     min-height: 89px;
+}
+
+.menu-link {
+     display:flex;
+     align-items: center;
+     padding: 0 30px;
+     font-family: 'Open Sans';
+     font-size: 14px;
+     line-height: 24px;
+     font-weight: 700;
+     text-transform: uppercase;
+     /* все буквы заглавные */
+     text-decoration: none;
+     /* без нжнего подчеркивания */
+     color: #E0E0E0;
+}
+
+.menu-link:hover{
+     background-color: #FF3F40;
+}
+
+.menu-active {
+     background-color: #FF3F40;
+}
+/* Main */
+/* Intro */
+.intro-wrapper{
+     display: block;
+     width: 100%;
+     padding: 102px 0 110px;
+     background-color: #F6F2F2;
+}
+
+.intro{
+     display: flex;
+     width: 1249px;
+     margin: 0 auto;
+     justify-content: space-between;
+     /* элементы распределились чтобы от края до края */
+}
+.intro-info{
+     max-width: 595px;
+}
+.intro-heading{
+     font-family: 'Open Sans';
+     /* !в названии шрифта всегда ставим пробел между словами! */
+     font-size: 60px;
+     line-height: 72px;
+     /* or 120% */
+     font-weight: 800;
+     /* толщина шрифта */
+     letter-spacing: 1.5px;
+     /* расстояние между буквами */
+     text-transform: uppercase;
+     margin: 0;
+     margin-bottom: 19px;
+     margin-top: -15px;
+}
+.intro-special{
+     letter-spacing: 6px;
+}
+.intro-text{
+     font-family: 'Open Sans';
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 28px;
+     /* or 175% */
+     margin: 0;
+     margin-bottom: 58px;
+}
+
+.intro-action{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 227px;
+     padding: 0.5em 1em;
+     box-sizing: border-box;
+     /* чтобы кнопка не увеличивалась при задавании паддингов */
+     min-height: 55px;
+     color: #fff;
+     font-family: 'Open Sans';
+     font-size: 18px;
+     line-height: 34px;
+     /* or 188% */
+     font-weight: 700;
+     background-color: #FF2D2D;
+     border-radius: 5px;
+     /* закругляем углы */
+     text-decoration: none;
+}
+
+.intro-video{
+     width: 551px;
+     height: 356px;
+     object-fit: cover;
+     /* видео займет указанные параметры путем обрезания краев */
+     box-shadow: -2.2px -13.8px 73px rgba(0,0,0,0.29) ;
+}
