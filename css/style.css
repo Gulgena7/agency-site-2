@@ -89,11 +89,12 @@
      min-height: 89px;
      margin: 0 auto;
      background-color: rgba(0,0,0,0.8);
+     padding-left: 30px;
 }
 
-.site-menu{
+/* .site-menu{
      margin-left: -30px;
-}
+} */
 
 .menu-list{
      display:flex;
