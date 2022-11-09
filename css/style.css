@@ -75,11 +75,19 @@
          url('../fonts/open-sans-v34-latin-800italic.woff') format('woff'), /* Modern Browsers */
          url('../fonts/open-sans-v34-latin-800italic.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/open-sans-v34-latin-800italic.svg#OpenSans') format('svg'); /* Legacy iOS */
-  }
+}
+
   /* Header */
 .header-wrapper{
      padding-top: 29px;
+}
+
+.header-grey{
      background-color: #F6F2F2;
+}
+
+.page-header{
+     margin: 0 auto;
 }
 
 .header{
@@ -87,7 +95,6 @@
      justify-content: center;
      width: 1249px;
      min-height: 89px;
-     margin: 0 auto;
      background-color: rgba(0,0,0,0.8);
      padding-left: 30px;
 }
@@ -130,6 +137,7 @@
 .menu-active {
      background-color: #FF3F40;
 }
+
 /* Main */
 /* Intro */
 .intro-wrapper{
@@ -144,14 +152,18 @@
      width: 1249px;
      margin: 0 auto;
      justify-content: space-between;
-     /* элементы распределились чтобы от края до края */
+     /* элементы распределились чтобы 
+     от края до края */
 }
+
 .intro-info{
      max-width: 595px;
 }
+
 .intro-heading{
      font-family: 'Open Sans';
-     /* !в названии шрифта всегда ставим пробел между словами! */
+     /* !в названии шрифта всегда 
+     ставим пробел между словами! */
      font-size: 60px;
      line-height: 72px;
      /* or 120% */
@@ -164,9 +176,11 @@
      margin-bottom: 19px;
      margin-top: -15px;
 }
+
 .intro-special{
      letter-spacing: 6px;
 }
+
 .intro-text{
      font-family: 'Open Sans';
      font-weight: 400;
@@ -177,14 +191,16 @@
      margin-bottom: 58px;
 }
 
-.intro-action{
+.action-link{
      display: flex;
      justify-content: center;
      align-items: center;
      width: 227px;
      padding: 0.5em 1em;
      box-sizing: border-box;
-     /* чтобы кнопка не увеличивалась при задавании паддингов */
+     /* чтобы замка входила в размеры кнопки и 
+     кнопка не увеличивалась при задавании 
+     паддингов */
      min-height: 55px;
      color: #fff;
      font-family: 'Open Sans';
@@ -202,6 +218,220 @@
      width: 551px;
      height: 356px;
      object-fit: cover;
-     /* видео займет указанные параметры путем обрезания краев */
+     /* видео займет указанные параметры
+      путем обрезания краев */
      box-shadow: -2.2px -13.8px 73px rgba(0,0,0,0.29) ;
+}
+
+/* Services */
+.services{
+     display: flex;
+     width: 1249px;
+     margin: 0 auto;
+     padding:107px 0 90px;
+     justify-content: space-between;
+     /* элементы распределились чтобы 
+     от края до края */
+     border-bottom: 2px solid #ececec;
+}
+
+.services__info{
+     width: 539px;
+}
+
+.services__heading{
+     margin: 0;
+     margin-bottom: 50px;
+     font-family: 'Open Sans';
+     font-size: 42px;
+     line-height: 55px;
+/* or 131% */
+     font-weight: 700;
+     letter-spacing: 0.4px;
+     text-transform: uppercase;
+     /* буквы звглавные */
+}
+
+.services__about{
+     margin: 0;
+     margin-bottom: 64px;
+     font-family: 'Open Sans';
+     font-size: 16px;
+     line-height: 28px;
+     /* or 175% */
+     font-weight: 400;
+}
+
+.action-link_red-transp{
+     color:#ff2d2d;
+     background-color: rgba(0,0,0,0.0001);
+     border: 2px solid #ff2d2d;
+}
+
+.services__items{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: end;
+     /* переносим флекс элементы */
+     gap:13px;
+     /* расстояние между флекс элементами */
+     width: 610px;
+}
+
+.services__item{
+     width: 50%;
+     /* уменьшили ширину стоки, 
+     чтобы не на всю строку надпись была */
+     width: 285px;
+     margin-bottom: 53px;    
+}
+
+.services__item_manag::before{
+     content: '';
+     display: block;
+     width: 41px;
+     height: 41px;
+     background-image: url(../img/ikon_manag.svg);
+     background-repeat: no-repeat;
+     margin-bottom: 33px;
+}
+
+.services__item_design::before{
+     content: '';
+     display: block;
+     width: 41px;
+     height: 41px;
+     background-image: url(../img/ikon_design.svg);
+     background-repeat: no-repeat;
+     margin-bottom: 33px;
+}
+
+.services__item_logo::before{
+     content: '';
+     display: block;
+     width: 41px;
+     height: 41px;
+     background-image: url(../img/ikon_logo.svg);
+     background-repeat: no-repeat;
+     margin-bottom: 33px;
+}
+
+.services__item_animation::before{
+     content: '';
+     display: block;
+     width: 41px;
+     height: 41px;
+     background-image: url(../img/ikon_animation.svg);
+     background-repeat: no-repeat;
+     margin-bottom: 33px;
+}
+
+.services__title{
+     margin: 0;
+     margin-bottom: 13px;
+     font-family: 'Open Sans';
+     font-size: 24px;
+     line-height: 1.2px;
+     /* or 0% */
+     font-weight: 600;
+}
+
+.services__text{
+     font-family: 'Open Sans';
+     font-size: 16px;
+     line-height: 28px;
+     /* or 175% */
+
+}
+
+/* Feature */
+.feature {
+     width: 1279px;
+     margin: 0 auto;
+     padding: 105px 0 65px;
+}
+
+.feature__header{
+     margin-bottom: 88px;
+}
+.feature__heading {
+     margin: 0;
+     margin-bottom: 28.5px;
+     font-family: 'Open Sans';
+     font-size: 42px;
+     line-height: 1.2px;
+     font-weight: 700;
+     letter-spacing: 0.38px;
+     text-transform: uppercase;
+     color: #000000;
+     text-align: center;
+}
+
+.feature__about {
+     width: 537px;
+     margin: 0 auto;
+     font-family: 'Open Sans';
+     font-size: 16px;
+     line-height: 28px;
+     text-align: center; 
+}
+
+.feature__line{
+     width: 130px;
+     height: 2px;
+     background-color: rgba(255,45,45,1);
+     border: none;
+}
+
+.filter {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 58px;
+}
+
+.filter__list {
+     list-style: none;
+     /* убираем стилизвцию ссылок */
+     margin: 0;
+     padding: 0;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 57px;
+}
+
+.filter__link {
+     font-family: 'Open Sans';
+     font-size: 22px;
+     line-height: 24px;
+     letter-spacing: 0.22px;
+     font-weight: 600;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: #000000;
+}
+
+.filter__link_active {
+     color: #FF2D2D;
+}
+
+.filter__link:hover {
+     color: #FF2D2D;;
+}
+
+.feature__products {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+}
+
+.feature__product {
+     width: 297px;
+     object-fit: cover;
+     object-position: 0% 50%;
+}
+
+.feature__product67 {
+     width: 297px;
+     object-fit: cover;
+     object-position: 50% 50%;
 }
