@@ -82,6 +82,11 @@
       нажатии якорных ссылок */
 }
 
+button {
+     cursor: pointer;
+}
+/* при наведении на кнопки курсор превращается в палец */
+
   /* Header */
 
 .page {
@@ -89,6 +94,8 @@
      font-style: normal;
      font-weight: 400;
      font-size: 16px;
+     padding-bottom: 1000px;
+     /* паддинг временный! */
 }
 
 .page__inner{
@@ -251,7 +258,7 @@
      display: flex;
      width: 1249px;
      margin: 0 auto;
-     padding:107px 0 90px;
+     padding: 107px 0 0;
      justify-content: space-between;
      /* элементы распределились чтобы 
      от края до края */
@@ -306,7 +313,7 @@
      /* уменьшили ширину стоки, 
      чтобы не на всю строку надпись была */
      width: 285px;
-     margin-bottom: 53px;    
+     margin-bottom: 25px;    
 }
 
 .services__item_manag::before{
@@ -617,7 +624,6 @@
      align-items: center;
      width: 1249px;
      margin: 0 auto;
-     margin-bottom: 1000px;
      padding: 150px 0 140px;
 }
 
@@ -626,7 +632,9 @@
      font-family: 'Open Sans';
      font-size: 42px;
      font-weight: 700;
-     line-height: 24px;
+     line-height: 1.2;
+     margin: 0;
+     margin-bottom: 17px;
 }
 
 .subscribe__about {
@@ -634,12 +642,23 @@
      font-family: 'Open Sans';
      font-size: 16px;
      line-height: 28px;  
+     margin: 0;
+     margin-bottom: 59px;
 }
 
 .subscribe__form {
      display: flex;
      flex-wrap: wrap;
      gap: 22px;
+}
+
+.subscribe__email {
+     width: 521px;
+     height: 79px;
+     padding: 0 36px;
+     border: none;
+     border-radius: 5px;
+     background-color: #fff;
 }
 
 .subscribe__input {
@@ -664,4 +683,5 @@
      border: none;
      border-radius: 5px;
     background-color: #ff2d2d;
+    text-transform: uppercase;
 }
