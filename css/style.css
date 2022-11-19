@@ -90,12 +90,10 @@ button {
   /* Header */
 
 .page {
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-style: normal;
      font-weight: 400;
      font-size: 16px;
-     padding-bottom: 1000px;
-     /* паддинг временный! */
 }
 
 .page__inner{
@@ -127,11 +125,18 @@ button {
 .header{
      display: flex;
      justify-content: center;
-     width: 1249px;
+     max-width: 1249px;
      min-height: 89px;
      background-color: rgba(0,0,0,0.8);
      padding-left: 30px;
 }
+
+@media screen and (max-width: 600px) {
+     .header {
+          padding-left: initial;
+     }
+}
+/* убираем паддинг медиазапросом для адаптива */
 
 .menu-list{
      display:flex;
@@ -140,6 +145,14 @@ button {
      padding: 0;
      list-style: none;
 }
+
+@media screen and (max-width: 600px) {
+     .menu-list {
+          justify-content: center;
+     }
+}
+/* помещаем в середину названия в шапке при адаптиве */
+
 .menu-list > li {
      display:flex;
      min-height: 89px;
@@ -149,9 +162,9 @@ button {
      display:flex;
      align-items: center;
      padding: 0 30px;
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 14px;
-     line-height: 24px;
+     line-height: 1.71;
      font-weight: 700;
      text-transform: uppercase;
      /* все буквы заглавные */
@@ -179,26 +192,52 @@ button {
 
 .intro{
      display: flex;
-     width: 1249px;
+     flex-wrap: wrap;
+     /* Перенос */
+     max-width: 1249px;
      margin: 0 auto;
      justify-content: space-between;
      /* элементы распределились чтобы 
      от края до края */
 }
 
-.intro-info{
+@media screen and (min-width: 800px) 
+(max-width: 1240px) {
+     .intro{
+          flex-wrap: nowrap;}
+} 
+
+.intro-info {
      max-width: 595px;
+     margin-right: 2vw;
+}
+
+@media screen and (max-width: 1240px) {
+     .intro-info {
+          width: 50%;
+          margin-right: initial;
+          /* при адаптиве сделать ширину 50%
+          и убрать margin-right */
+     }
+}
+
+@media screen and (max-width: 800px) {
+     .intro-info {
+          width: 100%;
+          margin-bottom: 80px;
+     }
 }
 
 .intro-heading{
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      /* !в названии шрифта всегда 
      ставим пробел между словами! */
      font-size: 60px;
-     line-height: 72px;
+     line-height: 1.2;
      /* or 120% */
      font-weight: 800;
      /* толщина шрифта */
+     font-variation-settings: "wght" 800;
      letter-spacing: 1.5px;
      /* расстояние между буквами */
      text-transform: uppercase;
@@ -209,13 +248,15 @@ button {
 
 .intro-special{
      letter-spacing: 6px;
+     overflow-wrap: break-word;
+     hyphens: auto;
 }
 
 .intro-text{
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-weight: 400;
      font-size: 16px;
-     line-height: 28px;
+     line-height: 1.75;
      /* or 175% */
      margin: 0;
      margin-bottom: 58px;
@@ -233,9 +274,9 @@ button {
      паддингов */
      min-height: 55px;
      color: #fff;
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 18px;
-     line-height: 34px;
+     line-height: 1.88;
      /* or 188% */
      font-weight: 700;
      background-color: #FF2D2D;
@@ -244,7 +285,7 @@ button {
      text-decoration: none;
 }
 
-.intro-video{
+.intro-video {
      width: 551px;
      height: 356px;
      object-fit: cover;
@@ -253,10 +294,22 @@ button {
      box-shadow: -2.2px -13.8px 73px rgba(0,0,0,0.29) ;
 }
 
+@media screen and (max-width: 1240px) {
+     .intro-video {
+          width: 50%;
+     }
+}
+
+@media screen and (max-width: 800px) {
+     .intro-video {
+          width: 100%;
+     }
+}
+
 /* Services */
 .services{
      display: flex;
-     width: 1249px;
+     max-width: 1249px;
      margin: 0 auto;
      padding: 107px 0 0;
      justify-content: space-between;
@@ -272,9 +325,9 @@ button {
 .services__heading{
      margin: 0;
      margin-bottom: 50px;
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 42px;
-     line-height: 55px;
+     line-height: 1.31;
 /* or 131% */
      font-weight: 700;
      letter-spacing: 0.4px;
@@ -285,9 +338,9 @@ button {
 .services__about{
      margin: 0;
      margin-bottom: 64px;
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 16px;
-     line-height: 28px;
+     line-height: 1.75;
      /* or 175% */
      font-weight: 400;
 }
@@ -359,7 +412,7 @@ button {
 .services__title{
      margin: 0;
      margin-bottom: 13px;
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 24px;
      line-height: 1.2;
      /* or 0% */
@@ -367,9 +420,9 @@ button {
 }
 
 .services__text{
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 16px;
-     line-height: 28px;
+     line-height: 1.75;
      /* or 175% */
 
 }
@@ -387,7 +440,7 @@ button {
 .feature__heading {
      margin: 0;
      margin-bottom: 29px;
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 42px;
      line-height: 1.2;
      font-weight: 700;
@@ -401,9 +454,9 @@ button {
      width: 537px;
      margin: 0 auto;
      margin-bottom: 35px;
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 16px;
-     line-height: 28px;
+     line-height: 1.75;
      text-align: center; 
 }
 
@@ -440,9 +493,9 @@ button {
 }
 
 .filter__link {
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 22px;
-     line-height: 24px;
+     line-height: 1.09;
      letter-spacing: 0.22px;
      font-weight: 600;
      text-transform: uppercase;
@@ -478,7 +531,7 @@ button {
 
 /* Team */
 .team{
-     width: 1249px;
+     max-width: 1249px;
      margin: 0 auto;
      padding: 65px 0 53px;
      text-align: left;
@@ -489,7 +542,7 @@ button {
 }
 
 .team__heading {
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 42px;
      font-weight: 700;
      margin: 0;
@@ -498,7 +551,7 @@ button {
 }
 
 .team__about{
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 16px;
      width: 450px;
      margin: 0;
@@ -508,8 +561,8 @@ button {
 .team__members {
      display: flex;
      display: grid;
-     grid-template-columns: repeat (2, auto);
-     grid-template-rows: repeat (2, auto);
+     grid-template-columns: repeat(2, auto);
+     grid-template-rows: repeat(2, auto);
      justify-content: space-between;
      align-items: end;
 }
@@ -542,7 +595,7 @@ button {
 
 .team__lead-name{
      display: block;
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 30px;
      font-weight: 600;
      text-transform: uppercase;
@@ -551,7 +604,7 @@ button {
 }
 
 .team__lead-about{
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 16px;
      margin: 0;
      margin-bottom: 46px;
@@ -568,10 +621,10 @@ button {
 
 .team__lead-link{
      color:#000000;
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-style: italic;
      font-size: 18px;
-     line-height: 24px;
+     line-height: 1.33;
      text-decoration: none;
 }
 
@@ -599,7 +652,7 @@ button {
 .team__other-name {
      display: none;
      color: #fff;
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 18px;
      font-weight: 600;
      text-transform: uppercase;
@@ -622,14 +675,14 @@ button {
      display: flex;
      flex-direction: column;
      align-items: center;
-     width: 1249px;
+     max-width: 1249px;
      margin: 0 auto;
      padding: 150px 0 140px;
 }
 
 .subscribe__heading {
      color: #fff;
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 42px;
      font-weight: 700;
      line-height: 1.2;
@@ -639,9 +692,9 @@ button {
 
 .subscribe__about {
      color: #fff;
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 16px;
-     line-height: 28px;  
+     line-height: 1.75;  
      margin: 0;
      margin-bottom: 59px;
 }
@@ -671,9 +724,9 @@ button {
 
 .subscribe__button {
      color: #fff;
-     font-family: 'Open Sans';
+     font-family: 'Open Sans', sans-serif;
      font-size: 18px;
-     line-height: 34px;  
+     line-height: 1.89;  
      font-weight: 700;
      display: flex;
      justify-content: center;
@@ -682,6 +735,180 @@ button {
      height: 79px;
      border: none;
      border-radius: 5px;
-    background-color: #ff2d2d;
+     background-color: #ff2d2d;
+     text-transform: uppercase;
+}
+
+/* Get in Touch */
+.feedback {
+     max-width: 1249px;
+     margin: 0 auto;
+     padding: 104px 0 107px;
+}
+
+.feedback__header {
+     max-width: 752px;
+     margin-bottom:77px;
+}
+
+.feedback__heading {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 42px; 
+     font-weight: 700;
+     margin: 0;
+     margin-bottom: 35px;
     text-transform: uppercase;
+}
+
+.feedback__about {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 16px; 
+     line-height: 1.75;
+     margin: 0;
+     margin-bottom: 50px;
+}
+
+.feedback__body {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+.feedback__form {
+     width: 731px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+
+.feedback__form > input::placeholder,
+.feedback__form > textarea::placeholder {
+     /* правило для плейсхолдеров */
+     color: #000;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 16px; 
+}
+
+.feedback__name {
+     box-sizing: border-box;
+     width: 339px;
+     height: 69px;
+     background-color: rgba(0,0,0,0.1);
+     border: none;
+     border-radius: 5px;
+     padding-left: 54px;
+     margin-right: 53px;
+     margin-bottom: 44px;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 16px; 
+}
+
+.feedback__email {
+     box-sizing: border-box;
+     width: 339px;
+     height: 69px;
+     background-color: rgba(0,0,0,0.1);
+     border: none;
+     border-radius: 5px;
+     padding-left: 48px;
+     margin-bottom: 44px;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 16px; 
+}
+
+.feedback__button {
+     width: 728px;
+     height: 72px;
+     border: none;
+     border-radius: 5px;
+     background-color: #ff3838;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 18px; 
+     color: #fff;
+     text-transform: uppercase;
+     letter-spacing: 0.3px;
+     line-height: 1.89;
+
+}
+
+.feedback__textarea {
+     box-sizing: border-box;
+     resize: none;
+     /* чтобы пользователи не могли
+     регулировать размер окна */
+     width: 731px;
+     height: 239px;
+     padding: 31px 51px;
+     border: none;
+     background-color: rgba(0,0,0,0.1);
+     border-radius: 5px;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 16px; 
+}
+
+.feedback__contacts {
+     color: #fff;
+     background-color: rgba(45,45,45,1);
+}
+
+.contacts {
+     width: 315px;
+     padding: 141px 17px 141px 79px;
+     /* (верх, право. низ, лево) */
+}
+
+.contacts__heading {
+     text-transform: uppercase;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 18px; 
+     font-weight: 700;
+     margin: 0;
+     margin-bottom: 30px;
+}
+
+.contacts__address {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 18px; 
+     line-height: 1.75;
+     margin: 0;
+     margin-bottom: 27px;
+}
+
+.contacts__email {
+     display: block;
+     color: #fff;
+     font-family: 'Open Sans', sans-serif;
+     margin: 0;
+     margin-bottom: 20px;
+}
+
+.contacts__tel {
+     display: block;
+     color: #fff;
+     font-family: 'Open Sans', sans-serif;
+     margin: 0;
+     margin-bottom: 20px;
+}
+/* Footer */
+.page__inner_dark-2 {
+     background-color: #313030;
+}
+
+.footer {
+     max-width: 1249px;
+     min-height: 111px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.footer__copyright {
+     margin: 0;
+     color: #b8b8b8;
+}
+
+.social {
+     display: flex;
+     gap: 18px;
 }
