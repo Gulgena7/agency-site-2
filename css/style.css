@@ -869,7 +869,6 @@ button {
 }
 
 .subscribe__form {
-     width: 100%;
      max-width: 758px;
      display: flex;
      flex-wrap: wrap;
