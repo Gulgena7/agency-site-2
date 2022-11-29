@@ -870,12 +870,14 @@ button {
 
 .subscribe__form {
      width: 100%;
+     max-width: 758px;
      display: flex;
      flex-wrap: wrap;
      gap: 22px;
 }
 
 .subscribe__email {
+     box-sizing: border-box;
      margin: 0;
      width: 521px;
      height: 79px;
@@ -887,7 +889,7 @@ button {
 
 /* @media screen and (max-width: 600px) {
      .subscribe__email{
-          max-width: 521px;
+          width: 100%;
      }    
      } */
 
