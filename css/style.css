@@ -328,6 +328,7 @@ button {
      margin: 0;
      margin-bottom: 19px;
      margin-top: -15px;
+     overflow-wrap: break-word;
 }
 
 .intro-special{
@@ -437,6 +438,7 @@ button {
 /* or 131% */
      font-weight: 700;
      letter-spacing: 0.4px;
+     overflow-wrap: break-word;
      text-transform: uppercase;
      /* буквы звглавные */
 }
@@ -587,6 +589,7 @@ button {
      text-transform: uppercase;
      color: #000000;
      text-align: center;
+     overflow-wrap: break-word;
 }
 
 .feature__about {
@@ -691,6 +694,7 @@ button {
      margin: 0;
      margin-bottom: 25px;
      text-transform: uppercase;
+     overflow-wrap: break-word;
 }
 
 .team__about{
@@ -857,6 +861,7 @@ button {
      line-height: 1.2;
      margin: 0;
      margin-bottom: 17px;
+     overflow-wrap: break-word;
 }
 
 .subscribe__about {
@@ -886,11 +891,11 @@ button {
      background-color: #fff;
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
      .subscribe__email{
           width: 100%;
      }    
-     } */
+     }
 
 .subscribe__button {
      color: #fff;
@@ -902,7 +907,7 @@ button {
      justify-content: center;
      align-items: center;
      width: 214px;
-     height: 79px;
+     min-height: 79px;
      border: none;
      border-radius: 5px;
      background-color: #ff2d2d;
@@ -936,6 +941,7 @@ button {
      margin: 0;
      margin-bottom: 35px;
      text-transform: uppercase;
+     overflow-wrap: break-word;
 }
 
 .feedback__about {
@@ -1014,7 +1020,7 @@ button {
 
 .feedback__button {
      width: 728px;
-     height: 72px;
+     min-height: 72px;
      border: none;
      border-radius: 5px;
      background-color: #ff3838;
@@ -1024,6 +1030,7 @@ button {
      text-transform: uppercase;
      letter-spacing: 0.3px;
      line-height: 1.89;
+     font-weight: 700;
 }
 
 .feedback__textarea {
