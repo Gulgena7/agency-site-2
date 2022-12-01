@@ -115,7 +115,7 @@ button {
 }
 
 .header-wrapper{
-     padding: 0 1vw;
+     padding: 0 2vw;
      padding-top: 29px;
 }
 
@@ -132,11 +132,11 @@ button {
 }
 
 .page__inner_subscribe {
-     padding: 0 1vw;
+     padding: 0 2vw;
 }
 
 .page__inner_footer {
-     padding: 0 1vw;
+     padding: 0 2vw;
 }
 
 
@@ -255,7 +255,7 @@ button {
      background-color: #FF3F40;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 801px) {
      .popap-menu {
           display: none;
      }
@@ -272,7 +272,7 @@ button {
 }
 
 .intro{
-     padding: 0 1vw;
+     padding: 0 2vw;
      display: flex;
      flex-wrap: wrap;
      /* Перенос */
@@ -396,7 +396,7 @@ button {
      display: flex;
      max-width: 1249px;
      margin: 0 auto;
-     padding: 0 1vw;
+     padding: 0 2vw;
      padding-top: 95px;
      padding-bottom: 52px;
      justify-content: space-between;
@@ -489,7 +489,7 @@ button {
 @media screen and (max-width: 595px) {
      .services__items {
           width: 100%;
-          justify-content: center;
+          justify-content: left;
      }
 }
 
@@ -570,7 +570,7 @@ button {
 .feature {
      max-width: 1249px;
      margin: 0 auto;
-     padding: 0 1vw;
+     padding: 0 2vw;
      padding-top: 100px;
      padding-bottom: 65px;
 }
@@ -677,7 +677,7 @@ button {
 .team{
      max-width: 1249px;
      margin: 0 auto;
-     padding: 0 1vw;
+     padding: 0 2vw;
      padding-top: 62px;
      padding-bottom: 105px;
      text-align: left;
@@ -769,6 +769,12 @@ button {
      list-style: none;
 }
 
+@media screen and (max-width: 1251px){
+     .team__lead-social {
+          margin-bottom: 1vw;
+     }
+}
+
 .team__lead-link{
      color:#000000;
      font-family: 'Open Sans', sans-serif;
@@ -848,7 +854,7 @@ button {
      align-items: center;
      max-width: 1249px;
      margin: 0 auto;
-     padding: 0 1vw;
+     padding: 0 2vw;
      padding-top: 150px;
      padding-bottom: 140px;
 }
@@ -919,7 +925,7 @@ button {
      max-width: 100%;
      margin: 0;
      padding-right: 0;
-     padding-left: 1vw;
+     padding-left: 2vw;
      padding-top: 104px;
      padding-bottom: 107px;
 }
@@ -963,7 +969,7 @@ button {
 
 @media (max-width: 1010px){
      .feedback__body {
-          padding: 0 1vw;
+          padding: 0 2vw;
      }
 }
 
@@ -1142,6 +1148,7 @@ button {
      justify-content: space-between;
      align-items: center;
      flex-wrap: wrap;
+     padding: 0 2vw;
 }
 
 .footer__copyright {
